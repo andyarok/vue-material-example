@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import 'materialize-css/dist/css/materialize.css'
 import Login from './pages/Login.vue'
 
 export default {
