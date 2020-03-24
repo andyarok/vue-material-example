@@ -22,11 +22,16 @@ npm install materialize-css
 vue init webpack-simple
 
 # modify the files according to necessity.
-# Materialize uses sass fir color theming.
+# Materialize uses sass for color theming.
 # To modify default colors, change the __variables.scss file as needed.
 npm install node-sass
 
 # Then sass compile from sass to css and use the new css.
+
+
+# added a patch.js file that could be used to patch the scss file of materialize.
+# The patch recompiles css from the patched scss. Use the patched file in code.
+npm run patch
 
 ```
 
