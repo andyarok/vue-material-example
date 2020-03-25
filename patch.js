@@ -11,6 +11,9 @@ shell.echo('Patching the file with secondary color');
 shell.sed('-i', 'secondary-color: color\\("teal", "lighten-1"\\)',
                 'secondary-color: color("blue", "lighten-1")',
                 varScssFile);
+shell.sed('-i','primary-color: color\\("materialize-red", "lighten-2"\\)',
+               'primary-color: color("blue", "lighten-2")',
+                varScssFile);
 
 shell.echo('Creating css file');
 var scssFile = 'node_modules/materialize-css/sass-patch/materialize.scss';
@@ -26,7 +29,7 @@ sass.render({
         if(!err){
           console.log('Successfully written to file ', outFile);
           shell.echo('Cleaning up');
-          shell.rm('-rf', 'node_modules/materialize-css/sass-patch/components');
+          //shell.rm('-rf', 'node_modules/materialize-css/sass-patch/components');
         }
       });
     }
