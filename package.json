@@ -13,7 +13,7 @@
   "dependencies": {
     "materialize-css": "^1.0.0",
     "node-sass": "^4.13.1",
-    "shelljs": "^0.8.3",
+    "shelljs": "^0.8.5",
     "vue": "^2.5.11"
   },
   "browserslist": [
